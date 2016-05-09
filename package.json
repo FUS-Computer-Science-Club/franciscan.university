@@ -1,0 +1,19 @@
+{
+  "name": "marcomtab-srf",
+  "version": "1.0.0",
+  "description": "Using the jotform source code and the materialize framework to creat a for to be embedded via iframe.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jesse Weigel",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.11.2",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-uncss": "^1.0.5"
+  }
+}

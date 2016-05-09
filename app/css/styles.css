@@ -1,0 +1,292 @@
+html {
+  color: #fff; }
+
+nav {
+  background-color: rgba(0, 0, 0, 0.25);
+  border: none;
+  box-shadow: none;
+  color: #fff;
+  padding: 0 10px;
+  transition: top 0.2s ease-in-out; }
+  @media screen and (min-width: 800px) {
+    nav {
+      background-color: rgba(0, 0, 0, 0.2); } }
+  nav .button-collapse {
+    color: #fff; }
+  nav ul a {
+    color: #fff; }
+  nav .brand-logo img {
+    height: 45px;
+    margin-top: 5px; }
+
+.side-nav .logo {
+  height: 90px; }
+  .side-nav .logo a {
+    padding: 10px 10px 0px 10px; }
+    .side-nav .logo a:hover {
+      background-color: #fff; }
+  .side-nav .logo img {
+    width: 100%; }
+
+.headroom {
+  will-change: transform;
+  transition: transform 200ms linear; }
+
+.headroom--pinned {
+  transform: translateY(0%); }
+
+.headroom--unpinned {
+  transform: translateY(-100%); }
+
+body {
+  font-size: 16px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+main {
+  flex: 1 0 auto;
+  margin-top: -56px;
+  background-color: #fff; }
+  @media only screen and (min-width: 601px) {
+    main {
+      margin-top: -64px; } }
+
+.section {
+  min-height: 100vh; }
+
+#home {
+  background-color: #21412a;
+  background-image: url("../img/top-img-500w.jpg");
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: top center; }
+  @media only screen and (min-width: 501px) {
+    #home {
+      background-image: url("../img/top-img-650w.jpg"); } }
+  @media only screen and (min-width: 601px) {
+    #home {
+      background-image: url("../img/top-img-1300w.jpg");
+      background-attachment: fixed; } }
+  @media only screen and (min-width: 1200px) {
+    #home {
+      background-image: url("../img/top-img-2000w.jpg");
+      background-attachment: fixed; } }
+
+#life {
+  background-color: #21412a;
+  background-image: url("../img/life2-500w.jpg");
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: top center; }
+  @media only screen and (min-width: 501px) {
+    #life {
+      background-image: url("../img/life2-650w.jpg"); } }
+  @media only screen and (min-width: 601px) {
+    #life {
+      background-image: url("../img/life2-1300w.jpg");
+      background-attachment: fixed; } }
+  @media only screen and (min-width: 1200px) {
+    #life {
+      background-image: url("../img/life2-2000w.jpg");
+      background-attachment: fixed; } }
+
+#faith {
+  background-color: #21412a;
+  background-image: url("../img/faith2-500w.jpg");
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: top center; }
+  @media only screen and (min-width: 501px) {
+    #faith {
+      background-image: url("../img/faith2-650w.jpg"); } }
+  @media only screen and (min-width: 601px) {
+    #faith {
+      background-image: url("../img/faith2-1300w.jpg");
+      background-attachment: fixed; } }
+  @media only screen and (min-width: 1200px) {
+    #faith {
+      background-image: url("../img/faith2-2000w.jpg");
+      background-attachment: fixed; } }
+
+#athletics {
+  background-color: #21412a;
+  background-image: url("../img/athletics-500w.jpg");
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: top center; }
+  @media only screen and (min-width: 501px) {
+    #athletics {
+      background-image: url("../img/athletics-650w.jpg"); } }
+  @media only screen and (min-width: 601px) {
+    #athletics {
+      background-image: url("../img/athletics-1300w.jpg");
+      background-attachment: fixed; } }
+  @media only screen and (min-width: 1200px) {
+    #athletics {
+      background-image: url("../img/athletics-2000w.jpg");
+      background-attachment: fixed; } }
+
+#households {
+  background-color: #21412a;
+  background-image: url("../img/households1-500w.jpg");
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: top center; }
+  @media only screen and (min-width: 501px) {
+    #households {
+      background-image: url("../img/households1-650w.jpg"); } }
+  @media only screen and (min-width: 601px) {
+    #households {
+      background-image: url("../img/households1-1300w.jpg");
+      background-attachment: fixed; } }
+  @media only screen and (min-width: 1200px) {
+    #households {
+      background-image: url("../img/households1-2000w.jpg");
+      background-attachment: fixed; } }
+
+#home .btn-large {
+  font-size: 20px; }
+
+@media screen and (max-height: 350px) {
+  #home {
+    padding-top: 40px; } }
+
+#home .parallax {
+  z-index: 1;
+  overflow: hidden; }
+
+#home .valign.container {
+  z-index: 2; }
+
+#home .flow-text {
+  font-size: 110%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 2px;
+  padding: 5px;
+  max-width: 383px;
+  margin: 0 auto; }
+
+@media screen and (min-width: 800px) {
+  #home {
+    background: none; } }
+
+#bgvid {
+  min-width: 100%;
+  min-height: 100%; }
+  @media screen and (max-width: 800px) {
+    #bgvid {
+      display: none; } }
+
+#down-icon {
+  position: relative;
+  margin: -90px auto 0;
+  display: block;
+  width: 90px;
+  opacity: .2;
+  cursor: pointer;
+  transition: all .3s;
+  color: #fff; }
+  #down-icon:hover {
+    opacity: .8; }
+
+.slider {
+  height: 10px;
+  min-height: 100vh; }
+  .slider .indicators {
+    z-index: 2;
+    margin-bottom: 9px; }
+    .slider .indicators .indicator-item {
+      opacity: .75;
+      height: 25px;
+      width: 25px;
+      background-color: #21412a;
+      margin-bottom: 10px; }
+    .slider .indicators .indicator-item.active {
+      background-color: #f4bf61;
+      opacity: 1; }
+  .slider .flow-text {
+    width: 110%;
+    margin-left: -5%; }
+
+.slider-text {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 2px; }
+  .slider-text .col {
+    padding: 0px; }
+
+.slider-btn {
+  font-size: 45px;
+  opacity: .75; }
+  .slider-btn:hover {
+    opacity: 1;
+    cursor: pointer; }
+
+.txt-shadow {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.39); }
+
+.btn-inverse {
+  background-color: transparent;
+  border: solid 1px #fff;
+  color: #fff;
+  transition: all .3s; }
+  .btn-inverse:hover {
+    background-color: #fff;
+    color: #21412a; }
+
+.icon-block {
+  padding: 0 15px; }
+
+@media screen and (min-width: 600px) {
+  #adventure .card-content {
+    min-height: 330px; } }
+
+@media screen and (min-width: 1200px) {
+  #adventure .card-content {
+    min-height: 299px; } }
+
+@media screen and (min-width: 1563px) {
+  #adventure .card-content {
+    min-height: 225px; } }
+
+#success p {
+  padding: 0 20px; }
+
+.hr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+  width: 50%;
+  display: block;
+  margin: 0 auto; }
+
+.bold {
+  font-weight: 500; }
+
+#next-step {
+  background-color: #f4bf61; }
+  #next-step .btn-large {
+    width: 90%;
+    background: #21412a;
+    border: #21412a; }
+    #next-step .btn-large:hover {
+      color: #fff; }
+  #next-step p {
+    padding: 15px 15px 0px 18px; }
+  #next-step #social-icons {
+    margin-top: 50px; }
+    #next-step #social-icons a i {
+      color: #fff;
+      font-size: 25px;
+      transition: all .3s; }
+      #next-step #social-icons a i:hover {
+        color: #21412a; }
+
+footer.page-footer {
+  background-color: #21412a;
+  margin-top: 0px;
+  padding-top: 0px; }
+  footer.page-footer .row {
+    margin-bottom: 0px;
+    margin-top: 10px; }
+
+.footer-copyright a {
+  margin-right: 10px; }
