@@ -3,7 +3,20 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var imagemin = require('gulp-imagemin');
+var usemin = require('gulp-usemin');
+var uglify = require('gulp-uglify');
+var minifyCss = require('gulp-minify-css');
 
+
+gulp.task('dist', function() {
+   gulp.src('app/index.html')
+        .pipe(usemin({
+            assetsDir: 'dist',
+            css: [minifyCss(), 'concat'],
+            js: [uglify(), 'concat']
+        }))
+        .pipe(gulp.dest('dist'));
+});
 
 gulp.task('sass', function(){
   return gulp.src('app/sass/**/*.sass')
