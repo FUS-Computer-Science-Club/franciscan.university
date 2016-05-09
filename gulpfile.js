@@ -7,21 +7,41 @@ var usemin = require('gulp-usemin');
 var uglify = require('gulp-uglify');
 var minifyCss = require('gulp-minify-css');
 var inject = require('gulp-inject'); //Start by adding the plugin to your gulpfile
+var htmlmin = require('gulp-htmlmin');
 
 
 gulp.task('dist', function() {
    gulp.src('app/index.html')
+     .pipe(inject(gulp.src(['app/js/analytics.js']), { // This is the file that has the content that will be injected into index.html
+       starttag: '<!-- inject:analytics -->', // Here we tell the location in which we want the injection to occur
+       transform: function (filePath, file) {
+         return file.contents.toString('utf8'); // Return file contents as string
+         }
+     }))
         .pipe(usemin({
             assetsDir: 'app',
             css: [minifyCss(), 'concat'],
-            js: [uglify(), 'concat']
+            js: [uglify(), 'concat'],
+            html: [ htmlmin({
+              collapseBooleanAttributes: true,
+              collapseWhitespace: true,
+              decodeEntities: true,
+              minifyCSS: true,
+              minifyJS: true,
+              processConditionalComments: true,
+              removeAttributeQuotes: true,
+              removeComments: true,
+              removeEmptyAttributes: true,
+              removeOptionalTags: true,
+              removeRedundantAttributes: true,
+              removeScriptTypeAttributes: true,
+              removeStyleLinkTypeAttributes: true,
+              removeTagWhitespace: true,
+              sortAttributes: true,
+              sortClassName: true,
+              useShortDoctype: true
+             }) ]
         }))
-        .pipe(inject(gulp.src(['app/js/analytics.js']), { // This is the file that has the content that will be injected into index.html
-        starttag: '<!-- inject:analytics -->', // Here we tell the location in which we want the injection to occur
-        transform: function (filePath, file) {
-          return file.contents.toString('utf8'); // Return file contents as string
-        }
-      }))
       .pipe(gulp.dest('dist')); // This is the destination of the final product
 });
 
