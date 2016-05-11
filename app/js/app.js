@@ -1,4 +1,6 @@
 $(function() {
+  $('head').append('<link href="css/styles.css" rel="stylesheet">');
+
   $(".button-collapse").sideNav({
     closeOnClick: true
   });

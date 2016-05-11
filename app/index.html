@@ -9,9 +9,141 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- build:css /css/style.min.css -->
   <link href="css/materialize.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
-  <!-- endbuild -->
 
+  <!-- endbuild -->
+<style>
+html {
+  color: #fff; }
+
+nav {
+  background-color: rgba(0, 0, 0, 0.25);
+  border: none;
+  box-shadow: none;
+  color: #fff;
+  padding: 0 10px;
+  transition: top 0.2s ease-in-out; }
+  @media screen and (min-width: 800px) {
+    nav {
+      background-color: rgba(0, 0, 0, 0.2); } }
+  nav .button-collapse {
+    color: #fff; }
+  nav ul a {
+    color: #fff; }
+  nav .brand-logo img {
+    height: 45px;
+    margin-top: 5px; }
+
+.side-nav .logo {
+  height: 90px; }
+  .side-nav .logo a {
+    padding: 10px 10px 0px 10px; }
+    .side-nav .logo a:hover {
+      background-color: #fff; }
+  .side-nav .logo img {
+    width: 100%; }
+
+.headroom {
+  will-change: transform;
+  transition: transform 200ms linear; }
+
+.headroom--pinned {
+  transform: translateY(0%); }
+
+.headroom--unpinned {
+  transform: translateY(-100%); }
+
+body {
+  font-size: 16px;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+main {
+  flex: 1 0 auto;
+  margin-top: -56px;
+  background-color: #fff; }
+  @media only screen and (min-width: 601px) {
+    main {
+      margin-top: -64px; } }
+
+.section {
+  min-height: 100vh; }
+
+#home {
+  background-color: #21412a;
+  background-image: url("../img/top-img-500w.jpg");
+  background-attachment: scroll;
+  background-size: cover;
+  background-position: top center; }
+  @media only screen and (min-width: 501px) {
+    #home {
+      background-image: url("../img/top-img-650w.jpg"); } }
+  @media only screen and (min-width: 601px) {
+    #home {
+      background-image: url("../img/top-img-1300w.jpg");
+      background-attachment: fixed; } }
+  @media only screen and (min-width: 1200px) {
+    #home {
+      background-image: url("../img/top-img-2000w.jpg");
+      background-attachment: fixed; } }
+      #home .btn-large {
+        font-size: 20px; }
+
+      @media screen and (max-height: 350px) {
+        #home {
+          padding-top: 40px; } }
+
+      #home .parallax {
+        z-index: 1;
+        overflow: hidden; }
+
+      #home .valign.container {
+        z-index: 2; }
+
+      #home .flow-text {
+        font-size: 110%;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 2px;
+        padding: 5px;
+        max-width: 383px;
+        margin: 0 auto; }
+
+      @media screen and (min-width: 800px) {
+        #home {
+          background: none; } }
+
+      #bgvid {
+        min-width: 100%;
+        min-height: 100%; }
+        @media screen and (max-width: 800px) {
+          #bgvid {
+            display: none; } }
+
+      #down-icon {
+        position: relative;
+        margin: -90px auto 0;
+        display: block;
+        width: 90px;
+        opacity: .2;
+        cursor: pointer;
+        transition: all .3s;
+        color: #fff; }
+        #down-icon:hover {
+          opacity: .8; }
+          .txt-shadow {
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.39); }
+
+          .btn-inverse {
+            background-color: transparent;
+            border: solid 1px #fff;
+            color: #fff;
+            transition: all .3s; }
+            .btn-inverse:hover {
+              background-color: #fff;
+              color: #21412a; }
+
+
+</style>
 </head>
 <body>
     <div class="navbar-fixed">
