@@ -60,7 +60,7 @@ gulp.task('imgmin', function() {
 			progressive: true,
 			svgoPlugins: [{removeViewBox: false}]
 		}))
-		.pipe(gulp.dest('dist/images'));
+		.pipe(gulp.dest('dist/img'));
 });
 
 gulp.task('watch', ['browserSync', 'sass'], function (){
