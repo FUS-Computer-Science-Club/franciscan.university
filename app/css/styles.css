@@ -280,6 +280,11 @@ main {
       #next-step #social-icons a i:hover {
         color: #21412a; }
 
+.modal {
+  color: #21412a; }
+  .modal svg {
+    max-height: 30vh; }
+
 footer.page-footer {
   background-color: #21412a;
   margin-top: 0px;

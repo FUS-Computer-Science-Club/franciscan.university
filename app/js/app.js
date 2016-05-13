@@ -31,7 +31,8 @@ $(function() {
     $('.slider').slider('next');
   });
 
-
+  // Modal
+   $('.modal-trigger').leanModal();
 
   //Smooth in page navigation
   function scrollToAnchor(name){
