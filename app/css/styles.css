@@ -280,7 +280,8 @@ main {
       #next-step #social-icons a i:hover {
         color: #21412a; }
     #next-step #social-icons .social-icon {
-      width: 34px; }
+      width: 34px;
+      margin-top: -3px; }
       #next-step #social-icons .social-icon:hover path {
         fill: #21412a; }
       #next-step #social-icons .social-icon path {
