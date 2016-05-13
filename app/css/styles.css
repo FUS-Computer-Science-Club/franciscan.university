@@ -279,6 +279,13 @@ main {
       transition: all .3s; }
       #next-step #social-icons a i:hover {
         color: #21412a; }
+    #next-step #social-icons .social-icon {
+      width: 34px; }
+      #next-step #social-icons .social-icon:hover path {
+        fill: #21412a; }
+      #next-step #social-icons .social-icon path {
+        fill: #fff;
+        transition: all .3s; }
 
 .modal {
   color: #21412a; }
