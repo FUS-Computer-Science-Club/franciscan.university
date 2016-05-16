@@ -98,6 +98,9 @@
 .icon-chevron-right:before {
   content: "\74";
 }
+.icon-chevron-down:before {
+  content: "\75";
+}
 
 
 
