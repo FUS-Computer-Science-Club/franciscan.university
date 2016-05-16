@@ -14,7 +14,8 @@ nav {
   nav .button-collapse {
     color: #fff; }
   nav ul a {
-    color: #fff; }
+    color: #fff;
+    font-weight: 300; }
   nav .brand-logo img {
     height: 45px;
     margin-top: 5px; }
