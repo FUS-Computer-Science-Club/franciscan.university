@@ -20,6 +20,9 @@ nav {
     height: 45px;
     margin-top: 5px; }
 
+.side-nav a {
+  font-weight: 300; }
+
 .side-nav .logo {
   height: 90px; }
   .side-nav .logo a {
