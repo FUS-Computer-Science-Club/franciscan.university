@@ -213,7 +213,7 @@ main {
       background-color: #21412a;
       margin-bottom: 10px; }
     .slider .indicators .indicator-item.active {
-      background-color: #f4bf61;
+      background-color: #ffc658;
       opacity: 1; }
   .slider .flow-text {
     width: 110%;
@@ -272,7 +272,7 @@ main {
   font-weight: 500; }
 
 #next-step {
-  background-color: #f4bf61; }
+  background-color: #ffc658; }
   #next-step .btn-large {
     width: 90%;
     background: #21412a;
