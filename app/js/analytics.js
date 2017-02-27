@@ -22,7 +22,7 @@ src="https://www.facebook.com/tr?id=927094344012164&ev=PageView&noscript=1"
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-5819863-10', 'auto');
-    ga({'send', 'pageview', {
+    ga('send', 'pageview', {
      'page': location.pathname + location.search  + location.hash});
 
   </script>
