@@ -1,4 +1,15 @@
 $(function() {
+  $('.hero-content-container').hide();
+
+  // Change content based on hash value
+  if (location.hash === '#here') {
+    //Do some cool stuff
+    console.log('JMJ');
+    $('html').addClass('alt-style');
+    $('.default-hero-content').hide();
+    $('.hero-content-container').show();
+  }
+
   $(".button-collapse").sideNav({
     closeOnClick: true
   });
