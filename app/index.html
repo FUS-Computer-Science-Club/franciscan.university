@@ -216,7 +216,7 @@ main {
         max-width: 383px;
         margin: 0 auto; }
 
-      @media screen and (min-width: 800px) {
+      @media screen and (min-width: 801px) {
         #home {
           background: none; } }
 
@@ -259,12 +259,19 @@ main {
         <div class="nav-wrapper">
           <a href="#home" class="brand-logo"><img src="img/side-nav-logo.jpg"/></a>
           <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="icon-navicon"></i></a>
-          <ul class="right hide-on-med-and-down">
+          <ul class="right hide-on-med-and-down default-content">
             <li><a class="slow-nav" href="#education">Your Education</a></li>
             <li><a class="slow-nav" href="#life">Your Life</a></li>
             <li><a class="slow-nav" href="#adventure">Your Adventure</a></li>
             <li><a class="slow-nav" href="#success">Your Success</a></li>
             <li><a class="slow-nav" href="#next-step">Your Next Step</a></li>
+          </ul>
+          <ul class="right hide-on-med-and-down here-content">
+            <li><a class="slow-nav" href="#education">Education</a></li>
+            <li><a class="slow-nav" href="#life">Life</a></li>
+            <li><a class="slow-nav" href="#adventure">Adventure</a></li>
+            <li><a class="slow-nav" href="#success">Success</a></li>
+            <li><a class="slow-nav" href="#next-step">Next Step</a></li>
           </ul>
         </div>
       </nav>
@@ -276,16 +283,21 @@ main {
         <img src="img/side-nav-logo.jpg">
       </a>
     </li>
-    <li><a class="slow-nav" href="#education">Your Education</a></li>
-    <li><a class="slow-nav" href="#life">Your Life</a></li>
-    <li><a class="slow-nav" href="#adventure">Your Adventure</a></li>
-    <li><a class="slow-nav" href="#success">Your Success</a></li>
-    <li><a class="slow-nav" href="#next-step">Your Next Step</a></li>
+    <li><a class="slow-nav default-content" href="#education">Your Education</a></li>
+    <li><a class="slow-nav default-content" href="#life">Your Life</a></li>
+    <li><a class="slow-nav default-content" href="#adventure">Your Adventure</a></li>
+    <li><a class="slow-nav default-content" href="#success">Your Success</a></li>
+    <li><a class="slow-nav default-content" href="#next-step">Your Next Step</a></li>
+    <li><a class="slow-nav here-content" href="#education">Education</a></li>
+    <li><a class="slow-nav here-content" href="#life">Life</a></li>
+    <li><a class="slow-nav here-content" href="#adventure">Adventure</a></li>
+    <li><a class="slow-nav here-content" href="#success">Success</a></li>
+    <li><a class="slow-nav here-content" href="#next-step">Next Step</a></li>
     <li>
-      <a onclick="goog_report_conversion ('https://myfranciscan.franciscan.edu/ICS/Admissions/Admissions.jnz?portlet=Get_Connected!_-_Undergraduate_Applications')" href="https://myfranciscan.franciscan.edu/ICS/Admissions/Admissions.jnz?portlet=Get_Connected!_-_Undergraduate_Applications">Apply Now</a>
+      <a onclick="goog_report_conversion ('https://jrm.targetx.com/orgs/00D36000000qTNpEAM/registration/step_1')" href="https://jrm.targetx.com/orgs/00D36000000qTNpEAM/registration/step_1">Apply Now</a>
     </li>
     <li>
-      <a onclick="goog_report_conversionR ('https://myfranciscan.franciscan.edu/ICS/Admissions/Admissions.jnz?portlet=Get_Connected!_-_Undergraduate_Inquiry')" href="https://myfranciscan.franciscan.edu/ICS/Admissions/Admissions.jnz?portlet=Get_Connected!_-_Undergraduate_Inquiry">Request Info</a>
+      <a onclick="goog_report_conversionR ('https://franciscan.secure.force.com/form?formid=217723')" href="https://franciscan.secure.force.com/form?formid=217723">Request Info</a>
     </li>
   </ul>
 </div>
@@ -348,7 +360,8 @@ main {
     <div class="section valign-wrapper black-text" id="education" name="#education" style="min-height: 500px; padding: 100px 0;">
       <div class="valign container">
         <div class="row">
-          <h3 class="center header light">Your Education</h3>
+          <h3 class="center header light default-content">Your Education</h3>
+          <h3 class="center header light here-content">Education and Opportunity</h3>
         </div>
         <div class="row hide-on-large-only">
           <div class="col s12">
@@ -446,7 +459,8 @@ main {
           <div class="section valign-wrapper white-text" id="life" name="#life">
             <div class="valign container">
               <div class="row">
-                <h3 class="center header light">Your Life</h3>
+                <h3 class="center header light default-content">Your Life</h3>
+                <h3 class="center header light here-content">Life in Christ</h3>
               </div>
               <div class="row center slider-text valign-wrapper">
                 <div class="col s2 valign" style="text-align: left;">
@@ -468,7 +482,8 @@ main {
           <div class="section valign-wrapper white-text" id="athletics">
             <div class="valign container">
               <div class="row">
-                <h3 class="center header light">Your Life: Athletics</h3>
+                <h3 class="center header light default-content">Your Life: Athletics</h3>
+                <h3 class="center header light here-content">Athletics</h3>
               </div>
               <div class="row center slider-text valign-wrapper">
                 <div class="col s2 valign" style="text-align: left;">
@@ -490,7 +505,8 @@ main {
           <div class="section valign-wrapper white-text" id="faith">
             <div class="valign container">
               <div class="row">
-                <h3 class="center header light">Your Life: The Sacraments</h3>
+                <h3 class="center header light default-content">Your Life: The Sacraments</h3>
+                <h3 class="center header light here-content">The Sacraments</h3>
               </div>
               <div class="row center slider-text valign-wrapper">
                 <div class="col s2 valign" style="text-align: left;">
@@ -512,7 +528,8 @@ main {
           <div class="section valign-wrapper white-text" id="households">
             <div class="valign container">
               <div class="row">
-                <h3 class="center header light">Your Life: Households</h3>
+                <h3 class="center header light default-content">Your Life: Households</h3>
+                <h3 class="center header light here-content">Households</h3>
               </div>
               <div class="row center slider-text valign-wrapper">
                 <div class="col s2 valign" style="text-align: left;">
@@ -537,7 +554,8 @@ main {
     <div class="section valign-wrapper black-text" id="adventure" name="#adventure">
       <div class="valign container">
         <div class="row">
-          <h3 class="center header light">Your Adventure</h3>
+          <h3 class="center header light default-content">Your Adventure</h3>
+          <h3 class="center header light here-content">Adventure and Growth</h3>
         </div>
         <div class="row light flow-text">
           <div class="col s12 m6">
@@ -570,7 +588,8 @@ main {
     <div class="section valign-wrapper black-text" id="success" name="#success" style="min-height: 500px; padding-bottom: 150px;">
       <div class="valign container">
         <div id="success-row" class="row">
-          <h3 class="center header light">Your Success</h3>
+          <h3 class="center header light default-content">Your Success</h3>
+          <h3 class="center header light here-content">Success to Come</h3>
         </div>
         <div class="row">
           <p class="flow-text">
@@ -592,7 +611,8 @@ main {
     <div class="section valign-wrapper" id="next-step" name="#next-step" style="min-height: 500px">
       <div class="valign container">
         <div class="row">
-          <h3 class="center header light white-text">Your Next Step</h3>
+          <h3 class="center header light white-text default-content">Your Next Step</h3>
+          <h3 class="center header light white-text here-content">The Next Step</h3>
         </div>
         <div class="row center">
           <a onclick="goog_report_conversion ('https://jrm.targetx.com/orgs/00D36000000qTNpEAM/registration/step_1')" href="https://jrm.targetx.com/orgs/00D36000000qTNpEAM/registration/step_1" id="apply-btn" class="btn-large waves-effect waves-light btn-inverse">Apply Now</a>
@@ -652,7 +672,7 @@ main {
 
   <footer class="page-footer">
    <div class="container hide-on-large-only">
-     <div class="row center">
+     <div class="row center white-text">
        <a class="white-text" target="_blank" href="http://www.franciscan.edu/Admissions/Undergraduate/Steps-to-Apply/">Steps To Apply </a>-
        <a class="white-text" target="_blank" href="http://www.franciscan.edu/sfs/new/">Financial Aid </a>-
        <a class="white-text" target="_blank" href="http://www.franciscan.edu">Franciscan.edu</a>

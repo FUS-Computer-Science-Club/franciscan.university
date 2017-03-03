@@ -1,13 +1,13 @@
 $(function() {
-  $('.hero-content-container').hide();
+  $('.hero-content-container, .here-content').hide();
 
   // Change content based on hash value
   if (location.hash === '#here') {
     //Do some cool stuff
     console.log('JMJ');
     $('html').addClass('alt-style');
-    $('.default-hero-content').hide();
-    $('.hero-content-container').show();
+    $('.default-hero-content, .default-content').hide();
+    $('.hero-content-container, .here-content').show();
   }
 
   $(".button-collapse").sideNav({
