@@ -2,17 +2,12 @@ html {
   color: #fff; }
 
 nav {
-  background-color: rgba(0, 0, 0, 0.25);
-  border: none;
-  box-shadow: none;
-  color: #fff;
+  background-color: #fff;
+  border-bottom: solid 3px #998643;
   padding: 0 10px;
   transition: top 0.2s ease-in-out; }
-  @media screen and (min-width: 800px) {
-    nav {
-      background-color: rgba(0, 0, 0, 0.2); } }
   nav .button-collapse {
-    color: #fff; }
+    color: #21412a; }
     nav .button-collapse i {
       line-height: 73px;
       font-size: 3.5rem; }
@@ -20,11 +15,14 @@ nav {
         nav .button-collapse i {
           line-height: 77px !important; } }
   nav ul a {
-    color: #fff;
+    color: rgba(0, 0, 0, 0.87);
     font-weight: 300; }
   nav .brand-logo img {
-    height: 45px;
+    height: 56px;
     margin-top: 5px; }
+    @media only screen and (max-width: 600px) {
+      nav .brand-logo img {
+        height: 45px; } }
 
 .side-nav a {
   font-weight: 300; }
