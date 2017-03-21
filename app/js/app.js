@@ -8,6 +8,8 @@ $(function() {
     $('html').addClass('alt-style');
     $('.default-hero-content, .default-content').hide();
     $('.hero-content-container, .here-content').show();
+    var hotjarCode="\n  <!-- Hotjar Tracking Code for franciscan.university -->\n<script>\n    (function(h,o,t,j,a,r){\n        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};\n        h._hjSettings={hjid:451603,hjsv:5};\n        a=o.getElementsByTagName('head')[0];\n        r=o.createElement('script');r.async=1;\n        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;\n        a.appendChild(r);\n    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');\n</script>\n";
+    $('head').append(hotjarCode);
   }
 
   $(".button-collapse").sideNav({
