@@ -31,6 +31,53 @@ $(function() {
   //     }
   //   });
   // }
+
+  //Background hero video controls
+  var $vid = $('#bgvid'),
+      $replay = $('#replay'),
+      $pause = $('#pause');
+
+  if ($(window).width() > 800) {
+    $vid[0].play();
+  }
+
+  $pause.hide();
+
+  $vid.on('playing',function(){
+      $replay.hide();
+      $pause.show();
+
+    });
+
+  $vid.on('ended',function(){
+      $vid[0].currentTime = '0';
+      $pause.hide();
+      $replay.show();
+    });
+
+    $replay.click(function(){
+      $vid[0].play();
+      $pause.hide();
+      $replay.show();
+    });
+
+    $pause.click(function(){
+      $vid[0].pause();
+      $pause.hide();
+      $replay.show();
+    });
+
+    // Change position from fixed to absolute on scroll. Fix for ios device bug
+    var scrollFired = false;
+
+    $(window).scroll(function(){
+      if(scrollFired === false) {
+        $replay.addClass('scroll');
+        $pause.addClass('scroll');
+        scrollFired = true;
+      }
+    });
+
   $('.slider').slider({'height': 'auto', 'indicators': false, 'interval': 50000});
   $('.slider').slider('pause');
 

@@ -198,6 +198,18 @@ main {
   #down-icon:hover {
     opacity: .8; }
 
+#replay, #pause {
+  position: relative;
+  margin: -83px 16px 0;
+  padding: 8px;
+  display: block;
+  cursor: pointer;
+  transition: all .3s;
+  float: right; }
+  @media only screen and (max-width: 800px) {
+    #replay, #pause {
+      display: none; } }
+
 .slider {
   height: 10px;
   min-height: 100vh; }
