@@ -5,11 +5,8 @@ $(function() {
   if (location.hash === '#here') {
     //Do some cool stuff
     console.log('JMJ');
-    $('html').addClass('alt-style');
     $('.default-hero-content, .default-content').hide();
     $('.hero-content-container, .here-content').show();
-    var hotjarCode="\n  <!-- Hotjar Tracking Code for franciscan.university -->\n<script>\n    (function(h,o,t,j,a,r){\n        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};\n        h._hjSettings={hjid:451603,hjsv:5};\n        a=o.getElementsByTagName('head')[0];\n        r=o.createElement('script');r.async=1;\n        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;\n        a.appendChild(r);\n    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');\n</script>\n";
-    $('head').append(hotjarCode);
   }
 
   $(".button-collapse").sideNav({
@@ -67,15 +64,17 @@ $(function() {
       $replay.show();
     });
 
-    // Change position from fixed to absolute on scroll. Fix for ios device bug
-    var scrollFired = false;
+    //Smooth in page navigation
+    function scrollToAnchor(name){
+        var aTag = $("div[name='"+ name +"']");
+        $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+    }
 
-    $(window).scroll(function(){
-      if(scrollFired === false) {
-        $replay.addClass('scroll');
-        $pause.addClass('scroll');
-        scrollFired = true;
-      }
+    $(".slow-nav").click(function() {
+      console.log('click');
+      event.preventDefault();
+      var name = $(this).attr('href');
+      scrollToAnchor(name);
     });
 
   $('.slider').slider({'height': 'auto', 'indicators': false, 'interval': 50000});
@@ -93,18 +92,6 @@ $(function() {
 
   // Modal
    $('.modal-trigger').leanModal();
-
-  //Smooth in page navigation
-  function scrollToAnchor(name){
-      var aTag = $("div[name='"+ name +"']");
-      $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-  }
-
-  $(".slow-nav").click(function() {
-    event.preventDefault();
-    var name = $(this).attr('href');
-    scrollToAnchor(name);
-  });
 
   //Headroom.js init
   // grab an element

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="alt-style">
 <head>
   <meta charset="utf-8">
   <title>Find Yourself Here | Franciscan University of Steubenville</title>
@@ -128,7 +128,6 @@ nav {
   border: none;
   box-shadow: none;
   color: #fff;
-  padding: 0 10px;
   transition: top 0.2s ease-in-out; }
   @media screen and (min-width: 800px) {
     nav {
@@ -228,13 +227,13 @@ main {
       #home .valign.container {
         z-index: 2; }
 
-      #home .flow-text {
+      /*#home .flow-text {
         font-size: 110%;
         background-color: rgba(0, 0, 0, 0.3);
         border-radius: 2px;
         padding: 5px;
         max-width: 383px;
-        margin: 0 auto; }
+        margin: 0 auto; }*/
 
       @media screen and (min-width: 801px) {
         #home {
@@ -252,14 +251,12 @@ main {
         margin: -112px auto 0;
         display: block;
         width: 90px;
-        opacity: .2;
+        opacity: .4;
         cursor: pointer;
         transition: all .3s;
         color: #fff; }
         #down-icon:hover {
           opacity: .8; }
-          .txt-shadow {
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.39); }
 
           .btn-inverse {
             background-color: transparent;
@@ -272,6 +269,17 @@ main {
 
 
 </style>
+<!-- Hotjar Tracking Code for franciscan.university -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:451603,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
 </head>
 <body>
     <div class="navbar-fixed">
@@ -328,30 +336,30 @@ main {
         <video autoplay poster="img/hero-placeholder-op.jpg" id="bgvid">
           <source src="video/hero-vid-720.mp4" type="video/mp4">
         </video>
-        <a href="#education" class="slow-nav"><i class="large icon-chevron-down" id="down-icon"></i></a>
-        <i class="material-icons" id="replay"><svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M8 5v14l11-7z"/>
-    <path d="M0 0h24v24H0z" fill="none"/>
-</svg></i>
-        <i class="material-icons" id="pause"><svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
-    <path d="M0 0h24v24H0z" fill="none"/>
-</svg></i>
       </div>
-      <div class="valign container default-hero-content">
-        <div class="row">
-          <h3 class="center header light">Find Yourself Here</h3>
+      <div class="valign default-hero-content">
+        <div class="row" style="margin-bottom: 0;">
+          <div class="col s12">
+            <h3 class="center header light" style="margin-bottom: 4px;">Find Yourself Here</h3>
+          </div>
         </div>
-        <div class="row center">
-          <p class="flow-text center">
-            Franciscan University educates, evangelizes, and sends forth joyful disciples for lives of worldwide mission.
-          </p>
+        <div class="center row">
+          <div class="col s12">
+            <p class="center flow-text" style="max-width: 700px; margin: 10px auto;">
+              Franciscan University educates, evangelizes, and sends forth joyful disciples for lives of worldwide mission.
+            </p>
+          </div>
         </div>
-        <div class="row center">
-          <a href="#education" class="btn-large waves-effect waves-light btn-inverse slow-nav">See How...</a>
+        <div class="row center hero-btn-row">
+          <div class="col s12 m4 offset-m2">
+            <a onclick="goog_report_conversion ('https://jrm.targetx.com/orgs/00D36000000qTNpEAM/registration/step_1')" href="https://jrm.targetx.com/orgs/00D36000000qTNpEAM/registration/step_1" class="btn waves-effect waves-light slow-nav">Apply</a>
+          </div>
+          <div class="col s12 m4">
+            <a onclick="goog_report_conversionR ('https://franciscan.secure.force.com/form?formid=217723')" href="https://franciscan.secure.force.com/form?formid=217723" class="btn waves-effect waves-light">Request Info</a>
+          </div>
         </div>
       </div>
-      <div class="valign container hero-content-container">
+      <div class="valign hero-content-container">
         <div class="row" style="margin-bottom: 0;">
           <h3 class="center header light" style="margin-bottom: 4px;">Find Yourself Here</h3>
         </div>
@@ -374,13 +382,18 @@ main {
             </p>
             <a href="#education" class="btn waves-effect waves-light slow-nav">Thrive</a>
           </div>
-          <!-- <p class="flow-text center">
-            Franciscan University educates, evangelizes, and sends forth joyful disciples for lives of worldwide mission.
-          </p> -->
         </div>
-        <!-- <div class="row center">
-          <a href="#education" class="btn-large waves-effect waves-light btn-inverse slow-nav">See How...</a>
-        </div> -->
+      </div>
+      <div class="parallax" id="hero-icon-container">
+        <a href="#education" class="slow-nav"><i class="large icon-chevron-down" id="down-icon"></i></a>
+        <i class="material-icons" id="replay"><svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M8 5v14l11-7z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+</svg></i>
+        <i class="material-icons" id="pause"><svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+    <path d="M0 0h24v24H0z" fill="none"/>
+</svg></i>
       </div>
     </div>
 

@@ -9,7 +9,6 @@ html
 nav
   background-color: #fff;
   border-bottom: solid 3px #998643;
-  padding: 0 10px
   transition: top 0.2s ease-in-out
 
   .button-collapse
@@ -138,13 +137,13 @@ main
   .valign.container
     z-index: 2
 
-  .flow-text
-    font-size: 110%
-    background-color: rgba(0, 0, 0, 0.3)
-    border-radius: 2px
-    padding: 5px
-    max-width: 383px
-    margin: 0 auto
+  // .flow-text
+  //   font-size: 110%
+  //   background-color: rgba(0, 0, 0, 0.3)
+  //   border-radius: 2px
+  //   padding: 5px
+  //   max-width: 383px
+  //   margin: 0 auto
 
   @media screen and (min-width: 801px)
     background: none
@@ -156,32 +155,42 @@ main
   @media screen and (max-width: 800px)
     display: none
 
+#hero-icon-container a
+  position: absolute
+  bottom: 0
+  pointer-events: none
+  width: 100%
 
 
 #down-icon
   position: relative
-  margin: -112px auto 0
+  margin: 0 auto
+  height: 93px
   display: block
   width: 90px
-  opacity: .2
+  opacity: .4
   cursor: pointer
   transition: all .3s
   color: #fff
+  pointer-events: auto
+
+  @media only screen and (max-width: 800px)
+    display: none !important
 
   &:hover
     opacity: .8
 
 #replay, #pause
-    position: relative
-    margin: -83px 16px 0
+    position: absolute
+    bottom: 8px
+    right: 16px
     padding: 8px
     display: block
     cursor: pointer
     transition: all .3s
-    float: right
 
     @media only screen and (max-width: 800px)
-      display: none
+      display: none !important
 
 .slider
   height: 10px
@@ -218,10 +227,6 @@ main
   &:hover
     opacity: 1
     cursor: pointer
-
-
-.txt-shadow
-  text-shadow: 1px 1px 1px rgba(0,0,0,.39)
 
 .btn-inverse
   background-color: transparent
@@ -314,10 +319,11 @@ footer.page-footer
 .alt-style
   color: rgba(0, 0, 0, 0.87)
 
-  .hero-content-container
+  .hero-content-container, .default-hero-content
     background-color: rgba(255, 255, 255, 0.5)
     max-width: none
     width: 100%
+    z-index: 2
 
     h3
       text-shadow: none
@@ -329,7 +335,6 @@ footer.page-footer
 
       .col
         @media screen and (max-width: 800px)
-          width: 100% !important
           padding: 8px 0
 
       p
@@ -346,6 +351,6 @@ footer.page-footer
         background-color: hsla(40, 100%, 56%, 1)
         text-shadow: none
         border-color: hsla(40, 100%, 56%, 1)
-        width: 128px
+        width: 175px
         height: 40px
         line-height: 40px
