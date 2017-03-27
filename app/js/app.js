@@ -91,7 +91,9 @@ $(function() {
   });
 
   // Modal
-   $('.modal-trigger').leanModal();
+   $('.modal').modal({
+     dismissible: true
+   });
 
   //Headroom.js init
   // grab an element
