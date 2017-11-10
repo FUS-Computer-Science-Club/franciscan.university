@@ -17,8 +17,9 @@ nav {
     color: rgba(0, 0, 0, 0.87);
     font-weight: 300; }
   nav .brand-logo img {
-    height: 56px;
-    margin-top: 5px; }
+    height: 52px;
+    margin-top: 5px;
+    margin-left: 8px; }
     @media only screen and (max-width: 600px) {
       nav .brand-logo img {
         height: 45px; } }
